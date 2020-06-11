@@ -123,6 +123,7 @@ function init() {
   score = 0;
   scoreDOM.textContent = 0;
   wordDOM.textContent = 'Type "start" to play';
+  inputDOM.value = "";
   inputDOM.placeholder = "start";
   inputDOM.addEventListener("keyup", typeStart);
 }
