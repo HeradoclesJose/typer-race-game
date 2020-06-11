@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Small game to practice your typing skills!"
+    />
+
+    <title>Typer Race! | Practice your WPM</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- External CSS -->
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Condensed:ital,wght@0,700;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="container">
+    <div class="text-content">
+      <h1 class="text-content__heading">Typer</h1>
+      <div class="text-content__main">
+        <p class="text-content__word" id="js--word">Type "start" to play</p>
+        <p class="text-content__timer" id="js--timer">Time</p>
+      </div>
+      <input
+        class="text-content__input"
+        type="text"
+        placeholder='"start"'
+        id="js--input"
+      />
+      <p class="text-content__score">
+        highscore <span class="text-content__symbol">=</span>
+        <span class="text-content__number" id="js--highscore">0</span>
+      </p>
+      <p class="text-content__score">
+        score <span class="text-content__symbol">=</span>
+        <span class="text-content__number" id="js--score">0</span>
+      </p>
+    </div>
+    <div class="information">
+      <a class="information__links" href="./views/help.html">help</a>
+      <a
+        class="information__links"
+        href="https://github.com/HeradoclesJose/typerRace"
+        target="_blank"
+      >
+        github
+      </a>
+    </div>
+    <script src="./js/script.js" type="application/javascript"></script>
+  </body>
+</html>

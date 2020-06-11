@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  outline: 0 !important;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+  background-color: $color-background;
+  color: $color-primary;
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 85vh;
+  max-width: 80rem;
+  margin: 0 auto;
+}

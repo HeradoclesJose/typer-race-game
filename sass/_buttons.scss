@@ -1,0 +1,22 @@
+.information {
+  margin-top: 20%;
+  text-align: left;
+
+  &__links {
+    font-size: 1.5rem;
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+
+    &:link,
+    &:visited {
+      color: $color-gray;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-gray-light;
+    }
+  }
+}
