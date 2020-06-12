@@ -119,7 +119,7 @@ const dictionary = [
 init();
 
 function init() {
-  timer = 16;
+  timer = 15;
   score = 0;
   scoreDOM.textContent = 0;
   wordDOM.textContent = 'Type "start" to play';
@@ -136,12 +136,11 @@ function typeStart() {
 }
 
 function gameStart() {
+  timerDOM.textContent = timer + "s";
+  gameMechanic();
+
   var interval = setInterval(() => {
-    if (timer === 16) {
-      timer--;
-      timerDOM.textContent = timer + "s";
-      gameMechanic();
-    } else if (timer > 1) {
+    if (timer > 1) {
       timer--;
       timerDOM.textContent = timer + "s";
     } else {
@@ -166,8 +165,6 @@ function gameMechanic() {
 
 function wordChecker() {
   if (inputDOM.value.toLowerCase() === dictionary[number]) {
-    inputDOM.removeEventListener("keyup", wordChecker);
-
     timer++;
     score++;
 
